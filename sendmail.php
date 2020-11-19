@@ -11,7 +11,7 @@
 	$mail->IsHTML(true);
      
         $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-        $mail->Username   = 'sergeytatis@mail.ru'; // Логин на почте
+        $mail->Username   = 'sergeytatis'; // Логин на почте
         $mail->Password   = 'million777'; // Пароль на почте
         $mail->SMTPSecure = 'ssl';
         $mail->Port       = 465;
@@ -19,7 +19,6 @@
 	$mail->setFrom('sergeytatis@mail.ru', 'Фрилансер по жизни');
 	//Кому отправить
 	$mail->addAddress('sergeytatis@gmail.com');
-	$mail->addAddress('sergeytatis@yandex.ru');
 	//Тема письма
 	$mail->Subject = 'Привет! Это Фрилансер по жизни';
 
