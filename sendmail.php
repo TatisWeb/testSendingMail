@@ -9,9 +9,14 @@
 	$mail->CharSet = 'UTF-8';
 	$mail->setLanguage('ru', 'phpmailer/language/');
 	$mail->IsHTML(true);
-
+     
+        $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
+        $mail->Username   = 'sergeytatis@yandex.ru'; // Логин на почте
+        $mail->Password   = 'matrix3d'; // Пароль на почте
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port       = 465;
 	//От кого письмо
-	$mail->setFrom('sergeytatis@mail.ru', 'Фрилансер по жизни');
+	$mail->setFrom('sergeytatis@yandex.ru', 'Фрилансер по жизни');
 	//Кому отправить
 	$mail->addAddress('sergeytatis@gmail.com);
 	//Тема письма
